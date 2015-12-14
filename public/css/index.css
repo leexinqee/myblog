@@ -1,0 +1,92 @@
+ul {
+  list-style-type: none;
+}
+ul li {
+  display: inline-block;
+}
+ul li a {
+  color: #7e7c7c;
+  outline: none;
+}
+.marginAuto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.pullLeft {
+  float: left;
+}
+.pullRight {
+  float: right;
+}
+.textLeft {
+  text-align: left;
+}
+.textRight {
+  text-align: right;
+}
+.textCenter {
+  text-align: center;
+}
+.container {
+  width: 100%;
+}
+/* 头部样式 */
+.head-box {
+  width: 100%;
+  height: 75px;
+}
+.head-box .inner-wrap {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  height: 100%;
+}
+.head-box .logo {
+  float: left;
+  width: 85px;
+  height: 45px;
+  overflow: hidden;
+  padding: 15px 0;
+}
+.head-box .logo img {
+  width: 100%;
+}
+.head-box .account {
+  float: right;
+  text-align: right;
+  width: 45px;
+  height: 45px;
+  padding: 15px 0;
+}
+.head-box .account img {
+  width: 45px;
+  height: 45px;
+}
+.head-box .link-item-wrap {
+  float: left;
+  margin-left: 10px;
+  height: 75px;
+}
+.head-box .link-item-wrap .link-item {
+  text-align: center;
+  line-height: 75px;
+  width: 100px;
+  -webkit-transition: all ease-in 0.2s;
+  -moz-transition: all ease-in 0.2s;
+  -ms-transition: all ease-in 0.2s;
+  -o-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+}
+.head-box .link-item-wrap .link-item a {
+  -webkit-transition: all ease-in 0.2s;
+  -moz-transition: all ease-in 0.2s;
+  -ms-transition: all ease-in 0.2s;
+  -o-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+}
+.head-box .link-item-wrap .link-item a:hover {
+  color: #ddd;
+}
+.head-box .link-item-wrap .link-item:hover {
+  background: #ccc;
+}

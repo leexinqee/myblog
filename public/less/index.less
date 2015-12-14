@@ -1,0 +1,121 @@
+
+// 共有变量
+@fontColor: #444;
+@whiteColor: #fff;
+@linkColor: #7e7c7c;
+@headHeight: 75px;
+@logoHeight: 45px;
+@linkHoverColor: #ddd;
+
+// 公共样式
+ul {
+  list-style-type: none;
+  li {
+    display: inline-block;
+    a {
+      color: @linkColor;
+      outline: none;
+    }
+  }
+}
+
+
+// 共有 mixin
+.marginAuto {
+  margin-left: auto;
+  margin-right: auto;;
+}
+.pullLeft {
+  float: left;
+}
+.pullRight {
+  float: right;
+}
+.textLeft {
+  text-align: left;
+}
+.textRight {
+  text-align: right;
+}
+.textCenter {
+  text-align: center;
+}
+
+
+
+
+.container {
+  width: 100%;
+}
+/* 头部样式 */
+.head {
+
+}
+
+.head-box {
+  width: 100%;
+  height: @headHeight;
+  .inner-wrap {
+    .marginAuto();
+    width: 1000px;
+    height: 100%;
+  }
+  .logo {
+    .pullLeft;
+    width: 85px;
+    height: @logoHeight;
+    overflow: hidden;
+    padding: (@headHeight - @logoHeight) / 2 0;
+    img {
+      width: 100%;
+    }
+  }
+  .account {
+    .pullRight;
+    .textRight;
+    width: 45px;
+    height: @logoHeight;
+    padding: (@headHeight - @logoHeight) / 2 0;
+    img {
+      width: 45px;
+      height: 45px;
+      cursor: pointer;
+    }
+  }
+  .link-item-wrap {
+    .pullLeft;
+    margin-left: 10px;
+    height: @headHeight;
+    .link-item {
+      .textCenter;
+      line-height: @headHeight;
+      width: 100px;
+      -webkit-transition: all ease-in .2s;
+      -moz-transition: all ease-in .2s;
+      -ms-transition: all ease-in .2s;
+      -o-transition: all ease-in .2s;
+      transition: all ease-in .2s;
+      a {
+        //display: block;
+        -webkit-transition: all ease-in .2s;
+        -moz-transition: all ease-in .2s;
+        -ms-transition: all ease-in .2s;
+        -o-transition: all ease-in .2s;
+        transition: all ease-in .2s;
+        &:hover {
+          color: @linkHoverColor;
+        }
+      }
+      &:hover {
+        background: #ccc;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+

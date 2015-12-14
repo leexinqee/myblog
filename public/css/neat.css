@@ -1,27 +1,27 @@
 
 /**
- * Neat.css ½â¾öµÄÎÊÌâ
- * »ùÓÚÒµÎñĞèÒª¼æÈİµÄä¯ÀÀÆ÷×öµ½ÒÔÏÂ¼¸µã£º
- * 1.½â¾öBUG£¬ÌØ±ğÊÇµÍ¼¶ä¯ÀÀÆ÷µÄ³£¼ûBUG£»
- * 2.Í³Ò»Ğ§¹û£¬µ«²»Ã¤Ä¿×·ÇóÖØÖÃÎª0£»
- * 3.Ïòºó¼æÈİ£»
- * 4.¿¼ÂÇÏìÓ¦Ê½£»
- * 5.¿¼ÂÇÒÆ¶¯Éè±¸¡£
+ * Neat.css è§£å†³çš„é—®é¢˜
+ * åŸºäºä¸šåŠ¡éœ€è¦å…¼å®¹çš„æµè§ˆå™¨åšåˆ°ä»¥ä¸‹å‡ ç‚¹ï¼š
+ * 1.è§£å†³BUGï¼Œç‰¹åˆ«æ˜¯ä½çº§æµè§ˆå™¨çš„å¸¸è§BUGï¼›
+ * 2.ç»Ÿä¸€æ•ˆæœï¼Œä½†ä¸ç›²ç›®è¿½æ±‚é‡ç½®ä¸º0ï¼›
+ * 3.å‘åå…¼å®¹ï¼›
+ * 4.è€ƒè™‘å“åº”å¼ï¼›
+ * 5.è€ƒè™‘ç§»åŠ¨è®¾å¤‡ã€‚
  */
 
-body, dl, dd, /* dt, Ä¬ÈÏÃ»±ß¾à */
-ul, ol, /*li, Ä¬ÈÏÃ»±ß¾à */
-h1, h2, h3, h4, h5, h6, pre, /* code, Ä¬ÈÏÃ»±ß¾à */
+body, dl, dd, /* dt, é»˜è®¤æ²¡è¾¹è· */
+ul, ol, /*li, é»˜è®¤æ²¡è¾¹è· */
+h1, h2, h3, h4, h5, h6, pre, /* code, é»˜è®¤æ²¡è¾¹è· */
 form, fieldset, legend, input, textarea, optgroup,
 p, blockquote, figure, hr, menu, dir,
-thead, tbody, tfoot, th, td /* th, td Ä¬ÈÏ padding:1px */
+thead, tbody, tfoot, th, td /* th, td é»˜è®¤ padding:1px */
 {
     margin:0;
     padding:0;
 }
 
 /**
- * ·Ç´óÃæ»ıÎÄ×ÖÅÅ°æÍøÕ¾Í¨³£²»ĞèÒªÁĞ±íÏî£¬Èç¹ûĞèÒª¿Éµ¥¶ÀÉèÖÃ
+ * éå¤§é¢ç§¯æ–‡å­—æ’ç‰ˆç½‘ç«™é€šå¸¸ä¸éœ€è¦åˆ—è¡¨é¡¹ï¼Œå¦‚æœéœ€è¦å¯å•ç‹¬è®¾ç½®
  */
 ul, ol {
     list-style-type: none;
@@ -29,21 +29,21 @@ ul, ol {
 }
 
 /**
- * È¥³ıÁ´½ÓÄ¬ÈÏµÄÏÂ»®Ïß£¬Ìá¸ßÎÄ×Ö¿É¶ÁĞÔ
+ * å»é™¤é“¾æ¥é»˜è®¤çš„ä¸‹åˆ’çº¿ï¼Œæé«˜æ–‡å­—å¯è¯»æ€§
  */
 a {
     text-decoration: none;
 }
 
 /**
-* È¥µô IE 10+ µã»÷Á´½ÓÊ±µÄ»ÒÉ«±³¾°
+* å»æ‰ IE 10+ ç‚¹å‡»é“¾æ¥æ—¶çš„ç°è‰²èƒŒæ™¯
 */
 a:active {
     background-color: transparent;
 }
 
 /**
- * È¥µôµã»÷Ê±µÄ½¹µã¿ò£¬Í¬Ê±±£Ö¤Ê¹ÓÃ¼üÅÌ¿ÉÒÔÏÔÊ¾½¹µã¿ò
+ * å»æ‰ç‚¹å‡»æ—¶çš„ç„¦ç‚¹æ¡†ï¼ŒåŒæ—¶ä¿è¯ä½¿ç”¨é”®ç›˜å¯ä»¥æ˜¾ç¤ºç„¦ç‚¹æ¡†
  */
 a:active,
 a:hover {
@@ -51,9 +51,9 @@ a:hover {
 }
 
 /**
- * Í³Ò» Chrome ºÍ Safari µÄ½¹µã¿òÑùÊ½
- * Chrome ÖĞ thin ¹Ø¼ü×Ö·Å´óÒ³Ãæºó½¹µã¿ò²»»á·Å´ó http://jsbin.com/ehakom/1
- * Firefox ÖĞ box-shadow »áµ¼ÖÂ½¹µã¿òÎ»ÖÃÆ«ÒÆ£¬ĞèÓÃ¡¸outline-offset¡¹ĞŞÕı
+ * ç»Ÿä¸€ Chrome å’Œ Safari çš„ç„¦ç‚¹æ¡†æ ·å¼
+ * Chrome ä¸­ thin å…³é”®å­—æ”¾å¤§é¡µé¢åç„¦ç‚¹æ¡†ä¸ä¼šæ”¾å¤§ http://jsbin.com/ehakom/1
+ * Firefox ä¸­ box-shadow ä¼šå¯¼è‡´ç„¦ç‚¹æ¡†ä½ç½®åç§»ï¼Œéœ€ç”¨ã€Œoutline-offsetã€ä¿®æ­£
  * 
  */
 a:focus {
@@ -61,11 +61,11 @@ a:focus {
 }
 
 /* ==========================================================================
-   ×ÖÌåºÍ»ù´¡ÅÅ°æ
+   å­—ä½“å’ŒåŸºç¡€æ’ç‰ˆ
    ========================================================================== */
 
 /**
- * 1.·ÀÖ¹ iOS ºáÆÁ×ÖºÅ·Å´ó£¬Í¬Ê±±£Ö¤ÔÚPCÉÏ zoom ¹¦ÄÜÕı³£
+ * 1.é˜²æ­¢ iOS æ¨ªå±å­—å·æ”¾å¤§ï¼ŒåŒæ—¶ä¿è¯åœ¨PCä¸Š zoom åŠŸèƒ½æ­£å¸¸
  */
 html {
     -ms-text-size-adjust: 100%; /* 1 */
@@ -81,7 +81,7 @@ body {
 
 
 /**
- * ËùÓĞ font-family Ğ¡Ğ´£¬´æÔÚ¿Õ¸ñµÄ×ÖÌåÃû¼Óµ¥ÒıºÅ
+ * æ‰€æœ‰ font-family å°å†™ï¼Œå­˜åœ¨ç©ºæ ¼çš„å­—ä½“ååŠ å•å¼•å·
  * @default-font: 'helvetica neue', tahoma, \5B8B\4F53, sans-serif;
  * @heading-font: 'helvetica neue', tahoma, 'hiragino sans gb', stheiti, 
     \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, 'wenquanyi micro hei', sans-serif;
@@ -89,12 +89,12 @@ body {
  */
 
 /**
- * ÖĞÎÄÓÅÏÈÊ¹ÓÃ¶¬ÇàºÚÌå¼òÌå(OS X)¡¢Î¢ÈíÑÅºÚ(Windows)ºÍÎÄÈªæäÎ¢Ã×ºÚ(Linux)
- * Î÷ÎÄÊ¹ÓÃ tahoma
- * 1. ·ÀÖ¹ÔªËØÖĞ¡¸font-family¡¹²»ÄÜ¼Ì³Ğ
- * 2. Î÷ÎÄ×ÖÌåºÍ OS X ×ÖÌåĞ´ÔÚÇ°Ãæ
- * 3. Opera 12.1 Ö®Ç°°æ±¾²»Ö§³ÖÖĞÎÄ×ÖÌåµÄÓ¢ÎÄÃû³Æ
- * 4. Î¢ÈíÑÅºÚ¡¸\5FAE\8F6F\96C5\9ED1¡¹,ÖĞÒ×ËÎÌå¡¸\5B8B\4F53¡¹
+ * ä¸­æ–‡ä¼˜å…ˆä½¿ç”¨å†¬é’é»‘ä½“ç®€ä½“(OS X)ã€å¾®è½¯é›…é»‘(Windows)å’Œæ–‡æ³‰é©¿å¾®ç±³é»‘(Linux)
+ * è¥¿æ–‡ä½¿ç”¨ tahoma
+ * 1. é˜²æ­¢å…ƒç´ ä¸­ã€Œfont-familyã€ä¸èƒ½ç»§æ‰¿
+ * 2. è¥¿æ–‡å­—ä½“å’Œ OS X å­—ä½“å†™åœ¨å‰é¢
+ * 3. Opera 12.1 ä¹‹å‰ç‰ˆæœ¬ä¸æ”¯æŒä¸­æ–‡å­—ä½“çš„è‹±æ–‡åç§°
+ * 4. å¾®è½¯é›…é»‘ã€Œ\5FAE\8F6F\96C5\9ED1ã€,ä¸­æ˜“å®‹ä½“ã€Œ\5B8B\4F53ã€
  */
 body,
 button, /* 1 */
@@ -108,9 +108,9 @@ textarea  /* 1 */
 }
 
 /**
- * ÖĞÎÄĞ¡ÓÚ 12px ¿É¶ÁĞÔºÜ²î
- * 1. Í³Ò» IE 6-7 ÖĞ×ÖÌå´óĞ¡
- * 2. Í³Ò» Firefox 4+£¬Safari 5 ºÍ Chrome ÖĞ¡¸section¡¹ºÍ¡¸article¡¹ÄÚµÄ×ÖÌå´óĞ¡
+ * ä¸­æ–‡å°äº 12px å¯è¯»æ€§å¾ˆå·®
+ * 1. ç»Ÿä¸€ IE 6-7 ä¸­å­—ä½“å¤§å°
+ * 2. ç»Ÿä¸€ Firefox 4+ï¼ŒSafari 5 å’Œ Chrome ä¸­ã€Œsectionã€å’Œã€Œarticleã€å†…çš„å­—ä½“å¤§å°
  */
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
@@ -141,8 +141,8 @@ h6 {
 }
 
 /**
- * ĞŞÕı¡¸abbr¡¹ÔªËØÔÚ Firefox ÍâÆäËûä¯ÀÀÆ÷Ã»ÓĞÏÂ»®ÏßµÄÎÊÌâ
- * Ìí¼ÓÎÊºÅ¹â±ê£¬Ã÷È·ÓïÒå
+ * ä¿®æ­£ã€Œabbrã€å…ƒç´ åœ¨ Firefox å¤–å…¶ä»–æµè§ˆå™¨æ²¡æœ‰ä¸‹åˆ’çº¿çš„é—®é¢˜
+ * æ·»åŠ é—®å·å…‰æ ‡ï¼Œæ˜ç¡®è¯­ä¹‰
  */
 abbr,
 acronym {
@@ -151,7 +151,7 @@ acronym {
 }
 
 /**
- * Firefox3+£¬Safari4/5 ºÍ Chrome ÖĞÍ³Ò»ÉèÖÃÎª´ÖÌå
+ * Firefox3+ï¼ŒSafari4/5 å’Œ Chrome ä¸­ç»Ÿä¸€è®¾ç½®ä¸ºç²—ä½“
  */
 b,
 strong {
@@ -159,14 +159,14 @@ strong {
 }
 
 /**
- * ĞŞÕı Safari5 ºÍ Chrome ÖĞÃ»ÓĞÑùÊ½µÄÎÊÌâ
+ * ä¿®æ­£ Safari5 å’Œ Chrome ä¸­æ²¡æœ‰æ ·å¼çš„é—®é¢˜
  */
 dfn {
     font-style: italic;
 }
 
 /**
- * ĞŞÕı Firefox ºÍÆäËûä¯ÀÀÆ÷Ö®¼äµÄ²îÒì
+ * ä¿®æ­£ Firefox å’Œå…¶ä»–æµè§ˆå™¨ä¹‹é—´çš„å·®å¼‚
  */
 hr {
     -moz-box-sizing: content-box;
@@ -175,8 +175,8 @@ hr {
 }
 
 /**
- * ÍøÒ³±ê¼Ç£¬Ó«¹â±Ê
- * ĞŞÕı IE6-11 ÖĞÃ»ÓĞÑùÊ½µÄÎÊÌâ
+ * ç½‘é¡µæ ‡è®°ï¼Œè§å…‰ç¬”
+ * ä¿®æ­£ IE6-11 ä¸­æ²¡æœ‰æ ·å¼çš„é—®é¢˜
  */
 mark {
     background-color: #D2E5FF;
@@ -184,12 +184,12 @@ mark {
 }
 
 /**
- * Í³Ò»´úÂëµÄ×ÖÌåÉèÖÃ
- * ×ÖÌåÒªÄÜÃ÷È·Çø·ÖÊı×Ö 0 ºÍ×ÖÄ¸ o
- * Mac ÓÅÏÈÊ¹ÓÃ Monaco£¬Windows ÓÅÏÈÊ¹ÓÃ Consolas
- * XP×Ô´ø Courier New
- * Windows 7¿ªÊ¼×Ô´øµÄ Consolas
- * MacÉÏ×Ô´øµÄMonaco£¬Osaka-Mono
+ * ç»Ÿä¸€ä»£ç çš„å­—ä½“è®¾ç½®
+ * å­—ä½“è¦èƒ½æ˜ç¡®åŒºåˆ†æ•°å­— 0 å’Œå­—æ¯ o
+ * Mac ä¼˜å…ˆä½¿ç”¨ Monacoï¼ŒWindows ä¼˜å…ˆä½¿ç”¨ Consolas
+ * XPè‡ªå¸¦ Courier New
+ * Windows 7å¼€å§‹è‡ªå¸¦çš„ Consolas
+ * Macä¸Šè‡ªå¸¦çš„Monacoï¼ŒOsaka-Mono
  */
 code,
 kbd,
@@ -199,9 +199,9 @@ samp {
 }
 
 /**
- * ÔöÇ¿ËùÓĞä¯ÀÀÆ÷ÖĞ pre ±êÇ©ÖĞÎÄ±¾µÄ¿É¶ÁĞÔ
- * 1. IE 6-7 ²»Ö§³Ö pre-wrap
- * 2. pre ±êÇ©Ó¦µ±°üº¬¹öÒç³ö
+ * å¢å¼ºæ‰€æœ‰æµè§ˆå™¨ä¸­ pre æ ‡ç­¾ä¸­æ–‡æœ¬çš„å¯è¯»æ€§
+ * 1. IE 6-7 ä¸æ”¯æŒ pre-wrap
+ * 2. pre æ ‡ç­¾åº”å½“åŒ…å«æ»šæº¢å‡º
  */
 pre {
     white-space: pre; 
@@ -211,16 +211,16 @@ pre {
 }
 
 /**
- * ĞĞÄÚÒıÓÃ
- * IE 6-7 ²»Ö§³Ö quotes ÊôĞÔ
- * ÏÖ´úä¯ÀÀÆ÷È¥³ı quotes ÄÚÈİ
+ * è¡Œå†…å¼•ç”¨
+ * IE 6-7 ä¸æ”¯æŒ quotes å±æ€§
+ * ç°ä»£æµè§ˆå™¨å»é™¤ quotes å†…å®¹
  */
 q {
     quotes: none;
 }
 
 /**
- * Safari 4 ²»Ö§³Ö<q>±êÇ©
+ * Safari 4 ä¸æ”¯æŒ<q>æ ‡ç­¾
  */
 q:before,
 q:after {
@@ -230,14 +230,14 @@ q:after {
 
 
 /**
- * ÖĞÎÄÍøÒ³<small>ÔªËØ×ÖºÅĞ¡ÓÚ 12px ²»Ò×ÔÄ¶Á
+ * ä¸­æ–‡ç½‘é¡µ<small>å…ƒç´ å­—å·å°äº 12px ä¸æ˜“é˜…è¯»
  */
 small {
     font-size: 85.7%; /* 12/14=0.8571428571 */
 }
 
 /**
- * ·ÀÖ¹ËùÓĞä¯ÀÀÆ÷ÖĞµÄ<sub>ºÍ<sup>Ó°ÏìĞĞ¸ß
+ * é˜²æ­¢æ‰€æœ‰æµè§ˆå™¨ä¸­çš„<sub>å’Œ<sup>å½±å“è¡Œé«˜
  * http://jsbin.com/usoyal/1/edit
  */
 sub,
@@ -257,11 +257,11 @@ sub {
 }
 
 /* ==========================================================================
-   ±í¸ñ
+   è¡¨æ ¼
    ========================================================================== */
 
 /**
- * ºÏ²¢µ¥Ôª¸ñ±ß¿ò
+ * åˆå¹¶å•å…ƒæ ¼è¾¹æ¡†
  */
 table {
     border-collapse: collapse;
@@ -269,7 +269,7 @@ table {
 }
 
 /**
- * ĞŞ¸´ IE ÖĞ th ²»ÄÜ¼Ì³Ğ text-align µÄÎÊÌâ²¢Í³Ò»×ó¶ÔÆë
+ * ä¿®å¤ IE ä¸­ th ä¸èƒ½ç»§æ‰¿ text-align çš„é—®é¢˜å¹¶ç»Ÿä¸€å·¦å¯¹é½
  * http://jsbin.com/evoxif/2/edit
  */
 th {
@@ -277,7 +277,7 @@ th {
 }
 
 /**
- * µ¥Ôª¸ñÌí¼Ó±ß¿ò
+ * å•å…ƒæ ¼æ·»åŠ è¾¹æ¡†
  */
 table th,
 table td {
@@ -286,7 +286,7 @@ table td {
 }
 
 /**
- * ±íÍ·µ×²¿±ß¿ò
+ * è¡¨å¤´åº•éƒ¨è¾¹æ¡†
  */
 table th {
     font-weight: inherit;
@@ -295,17 +295,17 @@ table th {
 }
 
 /* ==========================================================================
-   Ç¶ÈëÔªËØ
+   åµŒå…¥å…ƒç´ 
    ========================================================================== */
 
 /**
- * 1. È¥³ı IE6-9 ºÍ Firefox 3 ÖĞ a ÄÚ²¿ img ÔªËØÄ¬ÈÏµÄ±ß¿ò
- * 2. ĞŞÕı IE8 Í¼Æ¬ÏûÊ§bug
- * 3. ·ÀÖ¹ img Ö¸¶¨¡¸height¡¹Ê±Í¼Æ¬¸ß¶È²»ÄÜ°´ÕÕ¿í¶ÈµÈ±ÈËõ·Å£¬µ¼ÖÂÍ¼Æ¬±äĞÎ
+ * 1. å»é™¤ IE6-9 å’Œ Firefox 3 ä¸­ a å†…éƒ¨ img å…ƒç´ é»˜è®¤çš„è¾¹æ¡†
+ * 2. ä¿®æ­£ IE8 å›¾ç‰‡æ¶ˆå¤±bug
+ * 3. é˜²æ­¢ img æŒ‡å®šã€Œheightã€æ—¶å›¾ç‰‡é«˜åº¦ä¸èƒ½æŒ‰ç…§å®½åº¦ç­‰æ¯”ç¼©æ”¾ï¼Œå¯¼è‡´å›¾ç‰‡å˜å½¢
       http://jsbin.com/aJoTUca/2
- * 4. ÈÃÍ¼Æ¬Ö§³ÖÏìÓ¦Ê½
- * 5. È¥³ıÏÖ´úä¯ÀÀÆ÷Í¼Æ¬µ×²¿µÄ¿ÕÏ¶
- * 6. ĞŞ¸´ IE7 Í¼Æ¬Ëõ·ÅÊ§Õæ
+ * 4. è®©å›¾ç‰‡æ”¯æŒå“åº”å¼
+ * 5. å»é™¤ç°ä»£æµè§ˆå™¨å›¾ç‰‡åº•éƒ¨çš„ç©ºéš™
+ * 6. ä¿®å¤ IE7 å›¾ç‰‡ç¼©æ”¾å¤±çœŸ
  */
 img {
     border: 0 none; /* 1 */
@@ -317,18 +317,18 @@ img {
 }
 
 /**
- * ĞŞ¸´ IE9 ÖĞµÄ¡¸overflow¡¹µÄ¹ÖÒì±íÏÖ
+ * ä¿®å¤ IE9 ä¸­çš„ã€Œoverflowã€çš„æ€ªå¼‚è¡¨ç°
  */
 svg:not(:root) {
     overflow: hidden;
 }
 
 /* ==========================================================================
-   ±íµ¥
+   è¡¨å•
    ========================================================================== */
 
 /**
- * ¶¨ÒåÒ»ÖÂµÄ±ß¿ò¡¢Íâ±ß¾àºÍÄÚ±ß¾à
+ * å®šä¹‰ä¸€è‡´çš„è¾¹æ¡†ã€å¤–è¾¹è·å’Œå†…è¾¹è·
  */
 fieldset {
     border: 1px solid #c0c0c0;
@@ -337,9 +337,9 @@ fieldset {
 }
 
 /**
- * 1. ĞŞÕı IE 6-9 ÖĞÑÕÉ«²»ÄÜ¼Ì³ĞµÄÎÊÌâ
- * 2. ĞŞÕı Firefox3 ÖĞÎÄ×Ö²»»»ĞĞµÄÎÊÌâ
- * 3. ĞŞÕı IE6-7 ÖĞ¹ÖÒìµÄ¶ÔÆë·½Ê½
+ * 1. ä¿®æ­£ IE 6-9 ä¸­é¢œè‰²ä¸èƒ½ç»§æ‰¿çš„é—®é¢˜
+ * 2. ä¿®æ­£ Firefox3 ä¸­æ–‡å­—ä¸æ¢è¡Œçš„é—®é¢˜
+ * 3. ä¿®æ­£ IE6-7 ä¸­æ€ªå¼‚çš„å¯¹é½æ–¹å¼
  */
 legend {
     border: 0 none; /* 1 */
@@ -348,10 +348,10 @@ legend {
 }
 
 /**
- * 1. ĞŞÕıËùÓĞä¯ÀÀÆ÷ÖĞ×ÖÌå²»¼Ì³ĞµÄÎÊÌâ
- * 2. ĞŞÕıËùÓĞä¯ÀÀÆ÷ÖĞ×ÖºÅ²»¼Ì³ĞµÄÎÊÌâ
- * 3. ĞŞÕı Firefox 3+£¬ Safari5 ºÍ Chrome ÖĞÍâ±ß¾à²»Í¬µÄÎÊÌâ
- * 4. ¸ÄÉÆÔÚËùÓĞä¯ÀÀÆ÷ÏÂµÄ´¹Ö±¶ÔÆë·½Ê½
+ * 1. ä¿®æ­£æ‰€æœ‰æµè§ˆå™¨ä¸­å­—ä½“ä¸ç»§æ‰¿çš„é—®é¢˜
+ * 2. ä¿®æ­£æ‰€æœ‰æµè§ˆå™¨ä¸­å­—å·ä¸ç»§æ‰¿çš„é—®é¢˜
+ * 3. ä¿®æ­£ Firefox 3+ï¼Œ Safari5 å’Œ Chrome ä¸­å¤–è¾¹è·ä¸åŒçš„é—®é¢˜
+ * 4. æ”¹å–„åœ¨æ‰€æœ‰æµè§ˆå™¨ä¸‹çš„å‚ç›´å¯¹é½æ–¹å¼
  */
 button,
 input,
@@ -365,7 +365,7 @@ textarea {
 }
 
 /**
- * ĞŞÕı IE7 Ëæ×Å×ÖÊıÔö¼Ó±ß¾à²»¶ÏÔö¼ÓµÄÎÊÌâ
+ * ä¿®æ­£ IE7 éšç€å­—æ•°å¢åŠ è¾¹è·ä¸æ–­å¢åŠ çš„é—®é¢˜
  */
 input,
 button {
@@ -373,7 +373,7 @@ button {
 }
 
 /**
- * Í³Ò»¸÷ä¯ÀÀÆ÷¡¸text-transform¡¹²»»á¼Ì³ĞµÄÎÊÌâ
+ * ç»Ÿä¸€å„æµè§ˆå™¨ã€Œtext-transformã€ä¸ä¼šç»§æ‰¿çš„é—®é¢˜
  * http://jsbin.com/iqecic/1/edit
  * http://tjvantoll.com/2012/07/10/default-browser-handling-of-the-css-text-transform-property/
  */
@@ -383,10 +383,10 @@ select {
 }
 
 /**
- * 1. ±ÜÃâ Android 4.0.* ÖĞµÄ WebKit bug £¬¸Ãbug»áÆÆ»µÔ­ÉúµÄ
-   ¡¸audio¡¹ ºÍ¡¸video¡¹µÄ¿ØÖÆÆ÷
- * 2. ¸üÕı iOS ÖĞÎŞ·¨ÉèÖÃ¿Éµã»÷µÄ¡¸input¡¹µÄÎÊÌâ
- * 3. Í³Ò»ÆäËûÀàĞÍµÄ¡¸input¡¹µÄ¹â±êÑùÊ½
+ * 1. é¿å… Android 4.0.* ä¸­çš„ WebKit bug ï¼Œè¯¥bugä¼šç ´ååŸç”Ÿçš„
+   ã€Œaudioã€ å’Œã€Œvideoã€çš„æ§åˆ¶å™¨
+ * 2. æ›´æ­£ iOS ä¸­æ— æ³•è®¾ç½®å¯ç‚¹å‡»çš„ã€Œinputã€çš„é—®é¢˜
+ * 3. ç»Ÿä¸€å…¶ä»–ç±»å‹çš„ã€Œinputã€çš„å…‰æ ‡æ ·å¼
  */
 button,
 html input[type="button"], /* 1 */
@@ -397,7 +397,7 @@ input[type="submit"] {
 }
 
 /**
- * ÖØÖÃ°´Å¥½ûÓÃÊ±¹â±êÑùÊ½
+ * é‡ç½®æŒ‰é’®ç¦ç”¨æ—¶å…‰æ ‡æ ·å¼
  */
 button[disabled],
 input[disabled] {
@@ -405,9 +405,9 @@ input[disabled] {
 }
 
 /**
- * 1. ĞŞÕı IE 8/9 box-sizing ±»ÉèÖÃÎª¡¸content-box¡¹µÄÎÊÌâ
- * 2. ÒÆ³ı IE 8/9 ÖĞ¶àÓàµÄÄÚ±ß¾à
- * 3. ÒÆ³ı IE7 ÖĞ¶àÓàµÄÄÚ±ß¾à(IE6 ÖĞÈÎÈ»´æÔÚ)
+ * 1. ä¿®æ­£ IE 8/9 box-sizing è¢«è®¾ç½®ä¸ºã€Œcontent-boxã€çš„é—®é¢˜
+ * 2. ç§»é™¤ IE 8/9 ä¸­å¤šä½™çš„å†…è¾¹è·
+ * 3. ç§»é™¤ IE7 ä¸­å¤šä½™çš„å†…è¾¹è·(IE6 ä¸­ä»»ç„¶å­˜åœ¨)
  */
 input[type="checkbox"],
 input[type="radio"] {
@@ -418,8 +418,8 @@ input[type="radio"] {
 }
 
 /**
- * 1. ĞŞÕı Safari 5 ºÍ Chrome ÖĞ¡¸appearance¡¹±»ÉèÖÃÎª¡¸searchfield¡¹µÄÎÊÌâ
- * 2. ĞŞÕı Safari 5 ºÍ Chrome ÖĞ¡¸box-sizing¡¹±»ÉèÖÃÎª ¡¸border-box¡¹µÄÎÊÌâ
+ * 1. ä¿®æ­£ Safari 5 å’Œ Chrome ä¸­ã€Œappearanceã€è¢«è®¾ç½®ä¸ºã€Œsearchfieldã€çš„é—®é¢˜
+ * 2. ä¿®æ­£ Safari 5 å’Œ Chrome ä¸­ã€Œbox-sizingã€è¢«è®¾ç½®ä¸º ã€Œborder-boxã€çš„é—®é¢˜
  */    
 input[type="search"] {
     -webkit-appearance: textfield; /* 1 */
@@ -429,8 +429,8 @@ input[type="search"] {
 }
     
 /**
- * 1.ÒÆ³ı OS X ÖĞ Safari5 ºÍ Chrome ËÑË÷¿òÄÚ²àµÄ×ó±ß¾à
- * 2.Èç¹ûĞèÒªÒş²ØÇå³ı°´Å¥ĞèÒª¼ÓÉÏ
+ * 1.ç§»é™¤ OS X ä¸­ Safari5 å’Œ Chrome æœç´¢æ¡†å†…ä¾§çš„å·¦è¾¹è·
+ * 2.å¦‚æœéœ€è¦éšè—æ¸…é™¤æŒ‰é’®éœ€è¦åŠ ä¸Š
    input[type="search"]::-webkit-search-cancel-button
  */
 input[type="search"]::-webkit-search-decoration /* 1 */
@@ -439,7 +439,7 @@ input[type="search"]::-webkit-search-decoration /* 1 */
 }
     
 /**
- * ÒÆ³ı Firefox 3+ µÄÄÚ±ß¾à
+ * ç§»é™¤ Firefox 3+ çš„å†…è¾¹è·
  */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
@@ -448,10 +448,10 @@ input::-moz-focus-inner {
 }
 
 /**
- * ĞŞÕı Chrome ÖĞ input [type="number"] ÔÚÌØ¶¨¸ß¶ÈºÍ font-size Ê±,
- * ÏÂÃæÒ»¸ö¼ıÍ·¹â±ê±ä³É¡¸cursor: text¡¹
+ * ä¿®æ­£ Chrome ä¸­ input [type="number"] åœ¨ç‰¹å®šé«˜åº¦å’Œ font-size æ—¶,
+ * ä¸‹é¢ä¸€ä¸ªç®­å¤´å…‰æ ‡å˜æˆã€Œcursor: textã€
  * @demo: http://jsfiddle.net/FFXEc/
- * ¶¯»­ÑİÊ¾£ºhttp://gtms04.alicdn.com/tps/i4/T18kd8FCtaXXc_FhcF-330-350.gif
+ * åŠ¨ç”»æ¼”ç¤ºï¼šhttp://gtms04.alicdn.com/tps/i4/T18kd8FCtaXXc_FhcF-330-350.gif
  */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
@@ -459,8 +459,8 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 /**
- * 1. ÒÆ³ı IE6-11 ÖĞÄ¬ÈÏµÄ´¹Ö±¹ö¶¯Ìõ
- * 2. ½ûÖ¹Ë®Æ½ÍÏ¶¯£¬·ÀÖ¹ÆÆ»µ²¼¾Ö
+ * 1. ç§»é™¤ IE6-11 ä¸­é»˜è®¤çš„å‚ç›´æ»šåŠ¨æ¡
+ * 2. ç¦æ­¢æ°´å¹³æ‹–åŠ¨ï¼Œé˜²æ­¢ç ´åå¸ƒå±€
  */
 textarea {
     overflow: auto; /* 1 */
@@ -468,7 +468,7 @@ textarea {
 }
 
 /**
- * ĞŞÕı Chrome 30- option ÖĞÎÄ×ÖÎŞ·¨ÏÔÊ¾µÄÎÊÌâ
+ * ä¿®æ­£ Chrome 30- option ä¸­æ–‡å­—æ— æ³•æ˜¾ç¤ºçš„é—®é¢˜
  * http://jsbin.com/avujas/1/edit 
  */
 select:disabled option:checked,
@@ -477,7 +477,7 @@ option:disabled:checked {
 }
 
 /**
- * ĞŞÕı Safari 3+, Chrome 1+ Placeholder ¾ÓÖĞÎÊÌâ
+ * ä¿®æ­£ Safari 3+, Chrome 1+ Placeholder å±…ä¸­é—®é¢˜
  */
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     input {
@@ -486,7 +486,7 @@ option:disabled:checked {
 }
 
 /**
- * ĞŞÕı Firefox 19+ Placeholder ÉèÖÃÁËopacity µÄÎÊÌâ
+ * ä¿®æ­£ Firefox 19+ Placeholder è®¾ç½®äº†opacity çš„é—®é¢˜
  */
 input::-moz-placeholder, textarea::-moz-placeholder {
     color: darkGray;
@@ -494,14 +494,14 @@ input::-moz-placeholder, textarea::-moz-placeholder {
 }
 
 /**
- * label ÔªËØ¸øÓèÊÖĞÍ£¬°µÊ¾´Ë´¦¿Éµã»÷
+ * label å…ƒç´ ç»™äºˆæ‰‹å‹ï¼Œæš—ç¤ºæ­¤å¤„å¯ç‚¹å‡»
  */
 label {
     cursor: pointer;
 }
 
 /**
- * Í³Ò» select ÑùÊ½, Firefox ÖĞÓĞ padding:1px 0
+ * ç»Ÿä¸€ select æ ·å¼, Firefox ä¸­æœ‰ padding:1px 0
  * http://jsbin.com/avujas/1/edit
  */
 select[size],
@@ -512,11 +512,11 @@ select[size][multiple] {
 }
 
 /* ==========================================================================
-   HTML5 ÔªËØ
+   HTML5 å…ƒç´ 
    ========================================================================== */
 
 /**
- * ĞŞÕıÎ´¶¨ÒåÎª¡¸block¡¹µÄÔªËØ
+ * ä¿®æ­£æœªå®šä¹‰ä¸ºã€Œblockã€çš„å…ƒç´ 
  */
 article,
 aside,
@@ -534,8 +534,8 @@ summary {
 }
 
 /**
- * 1. ĞŞÕıÎ´¶¨ÒåÎª¡¸inline-block¡¹µÄÔªËØ
- * 2. ĞŞÕı Chrome¡¢Firefox¡¢Opera ÖĞ ¡¸progress¡¹ÔªËØ vertical-align Ä¬ÈÏÖµ²»Ò»ÖÂ
+ * 1. ä¿®æ­£æœªå®šä¹‰ä¸ºã€Œinline-blockã€çš„å…ƒç´ 
+ * 2. ä¿®æ­£ Chromeã€Firefoxã€Opera ä¸­ ã€Œprogressã€å…ƒç´  vertical-align é»˜è®¤å€¼ä¸ä¸€è‡´
  */
 audio,
 canvas,
@@ -546,8 +546,8 @@ progress {
 }
 
 /**
- * 1.·ÀÖ¹ÏÖ´úä¯ÀÀÆ÷½«Ã»ÓĞ¡¸controls¡¹ÊôĞÔµÄ ¡¸audio¡¹ÔªËØÏÔÊ¾³öÀ´
- * 2.È¥µô iOS 5 ÖĞ¶àÓàµÄ¸ß¶È
+ * 1.é˜²æ­¢ç°ä»£æµè§ˆå™¨å°†æ²¡æœ‰ã€Œcontrolsã€å±æ€§çš„ ã€Œaudioã€å…ƒç´ æ˜¾ç¤ºå‡ºæ¥
+ * 2.å»æ‰ iOS 5 ä¸­å¤šä½™çš„é«˜åº¦
  */
 audio:not([controls]) {
     display: none; /* 1 */
@@ -555,15 +555,15 @@ audio:not([controls]) {
 }
 
 /**
- * ĞŞ¸´ IE 7/8/9£¬Firefox 3 ºÍ Safari 4 ÖĞ ¡¸hidden¡¹ÊôĞÔ²»Æğ×÷ÓÃµÄÎÊÌâ
- * ÔÚIE¡¢Safari¡¢Firefox 22- ÖĞÒş²Ø¡¸template¡¹ÔªËØ
+ * ä¿®å¤ IE 7/8/9ï¼ŒFirefox 3 å’Œ Safari 4 ä¸­ ã€Œhiddenã€å±æ€§ä¸èµ·ä½œç”¨çš„é—®é¢˜
+ * åœ¨IEã€Safariã€Firefox 22- ä¸­éšè—ã€Œtemplateã€å…ƒç´ 
  */
 [hidden], template {
     display: none;
 }
 
 /**
- * Îª¿ÉÍÏ¶¯ÔªËØÌí¼ÓÍÏ¶¯µÄ¹â±ê
+ * ä¸ºå¯æ‹–åŠ¨å…ƒç´ æ·»åŠ æ‹–åŠ¨çš„å…‰æ ‡
  * http://jsbin.com/apavod/1/edit
  */
 [draggable] {
@@ -571,11 +571,11 @@ audio:not([controls]) {
 }
 
 /**
- * ¾ÓÖĞ HTML5 dialog ÔªËØ
- * Chrome 31 Ö§³Ö£¬Ğè¿ªÆô chrome://flags/#enable-experimental-web-platform-features
- * Chrome 28 Ö®Ç°¡¢Firefox ÖĞ²»Ö§³Ö height:fit-content; 
+ * å±…ä¸­ HTML5 dialog å…ƒç´ 
+ * Chrome 31 æ”¯æŒï¼Œéœ€å¼€å¯ chrome://flags/#enable-experimental-web-platform-features
+ * Chrome 28 ä¹‹å‰ã€Firefox ä¸­ä¸æ”¯æŒ height:fit-content; 
    https://src.chromium.org/viewvc/blink?revision=148314&view=revision
- * ::backdrop ¶¨ÒåÕÚÕÖÑùÊ½
+ * ::backdrop å®šä¹‰é®ç½©æ ·å¼
  * @demo: http://jsbin.com/iPACab/1
  */
 dialog {
