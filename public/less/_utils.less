@@ -1,0 +1,101 @@
+// 公共样式
+a {
+  color: @linkColor;
+  outline: none;
+}
+ul {
+  list-style-type: none;
+  li {
+    display: inline-block;
+  }
+}
+.clearfix {
+  display: block;
+  zoom: 1;
+  &:after {
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+.fwc {
+  color: white;
+}
+
+// 共有 mixin
+.marginAuto {
+  margin-left: auto;
+  margin-right: auto;;
+}
+.pullLeft {
+  float: left;
+}
+.pullRight {
+  float: right;
+}
+.textLeft {
+  text-align: left;
+}
+.textRight {
+  text-align: right;
+}
+.textCenter {
+  text-align: center;
+}
+.border-radius(@radius: 50%) {
+  border-radius: @radius;
+}
+.box-center(@width, @height) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -@width / 2;
+  margin-top: -@height / 2;
+}
+
+.transition(@time: 0.2s, @fn: ease-in-out) {
+  -webkit-transition: all @fn @time;
+  -moz-transition: all @fn @time;
+  -ms-transition: all @fn @time;
+  -o-transition: all @fn @time;
+  transition: all @fn @time;
+}
+
+// arrow样式
+.arrow-up(@width: 20px, @bgcolor: #ccc) {
+  width: 0;
+  height: 0;
+  border-left: @width @bgcolor transparent;
+  border-right: @width @bgcolor transparent;
+  border-bottom: 2 * @width @bgcolor solid;
+}
+.arrow-down(@width: 20px, @bgcolor: #ccc) {
+  width: 0;
+  height: 0;
+  border-left: @width @bgcolor transparent;
+  border-right: @width @bgcolor transparent;
+  border-top: 2 * @width @bgcolor solid;
+}
+.arrow-left(@width: 20px, @bgcolor: #ccc) {
+  width: 0;
+  height: 0;
+  border-top: @width @bgcolor transparent;
+  border-bottom: @width @bgcolor transparent;
+  border-right: 2 * @width @bgcolor solid;
+}
+.arrow-right(@width: 20px, @bgcolor: #ccc) {
+  width: 0;
+  height: 0;
+  border-top: @width @bgcolor transparent;
+  border-bottom: @width @bgcolor transparent;
+  border-left: 2 * @width @bgcolor solid;
+}
+
+
+
+
+
+

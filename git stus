@@ -1,0 +1,188 @@
+[1mdiff --git a/.idea/workspace.xml b/.idea/workspace.xml[m
+[1mindex 7da6c72..2b9ffd9 100644[m
+[1m--- a/.idea/workspace.xml[m
+[1m+++ b/.idea/workspace.xml[m
+[36m@@ -2,12 +2,7 @@[m
+ <project version="4">[m
+   <component name="ChangeListManager">[m
+     <list default="true" id="ddebf65b-ee13-4ae1-817f-abb1693a04fe" name="Default" comment="">[m
+[31m-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />[m
+[31m-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />[m
+[31m-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/less/index.less" afterPath="$PROJECT_DIR$/public/less/index.less" />[m
+[31m-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/neat.css" afterPath="$PROJECT_DIR$/public/css/neat.css" />[m
+       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />[m
+[31m-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />[m
+     </list>[m
+     <ignored path="myapp.iws" />[m
+     <ignored path=".idea/workspace.xml" />[m
+[36m@@ -61,16 +56,26 @@[m
+           </provider>[m
+         </entry>[m
+       </file>[m
+[31m-      <file leaf-file-name=".gitignore.swp" pinned="false" current-in-tab="true">[m
+[32m+[m[32m      <file leaf-file-name=".gitignore.swp" pinned="false" current-in-tab="false">[m
+         <entry file="file://$PROJECT_DIR$/.gitignore.swp">[m
+           <provider selected="true" editor-type-id="text-editor">[m
+[31m-            <state vertical-scroll-proportion="0.0">[m
+[32m+[m[32m            <state vertical-scroll-proportion="-0.0">[m
+               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />[m
+               <folding />[m
+             </state>[m
+           </provider>[m
+         </entry>[m
+       </file>[m
+[32m+[m[32m      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">[m
+[32m+[m[32m        <entry file="file://$PROJECT_DIR$/package.json">[m
+[32m+[m[32m          <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m            <state vertical-scroll-proportion="0.7446808">[m
+[32m+[m[32m              <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />[m
+[32m+[m[32m              <folding />[m
+[32m+[m[32m            </state>[m
+[32m+[m[32m          </provider>[m
+[32m+[m[32m        </entry>[m
+[32m+[m[32m      </file>[m
+       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">[m
+         <entry file="file://$PROJECT_DIR$/public/css/style.css">[m
+           <provider selected="true" editor-type-id="text-editor">[m
+[36m@@ -170,74 +175,6 @@[m
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />[m
+             </PATH_ELEMENT>[m
+           </PATH>[m
+[31m-          <PATH>[m
+[31m-            <PATH_ELEMENT>[m
+[31m-              <option name="myItemId" value="myapp" />[m
+[31m-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />[m
+[31m-            </PATH_ELEMENT>[m
+[31m-            <PATH_ELEMENT>[m
+[31m-              <option name="myItemId" value="myapp" />[m
+[31m-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />[m
+[31m-            </PATH_ELEMENT>[m
+[31m-            <PATH_ELEMENT>[m
+[31m-              <option name="myItemId" value="public" />[m
+[31m-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />[m
+[31m-            </PATH_ELEMENT>[m
+[31m-          </PATH>[m
+[31m-          <PATH>[m
+[31m-            <PATH_ELEMENT>[m
+[31m-              <option name="myItemId" value="myapp" />[m
+[31m-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />[m
+[31m-            </PATH_ELEMENT>[m
+[31m-            <PATH_ELEMENT>[m
+[31m-              <option name="myItemId" value="myapp" />[m
+[31m-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />[m
+[31m-            </PATH_ELEMENT>[m
+[31m-            <PATH_ELEMENT>[m
+[31m-              <option name="myItemId" value="public" />[m
+[31m-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />[m
+[31m-            </PATH_ELEMENT>[m
+[31m-            <PATH_ELEMENT>[m
+[31m-              <option name="myItemId" value="less" />[m
+[31m-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />[m
+[31m-            </PATH_ELEMENT>[m
+[31m-          </PATH>[m
+[31m-          <PATH>[m
+[31m-            <PATH_ELEMENT>[m
+[31m-              <option name="myItemId" value="myapp" />[m
+[31m-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />[m
+[31m-            </PATH_ELEMENT>[m
+[31m-            <PATH_ELEMENT>[m
+[31m-              <option name="myItemId" value="myapp" />[m
+[31m-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />[m
+[31m-            </PATH_ELEMENT>[m
+[31m-            <PATH_ELEMENT>[m
+[31m-              <option name="myItemId" value="public" />[m
+[31m-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />[m
+[31m-            </PATH_ELEMENT>[m
+[31m-            <PATH_ELEMENT>[m
+[31m-              <option name="myItemId" value="img" />[m
+[31m-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />[m
+[31m-            </PATH_ELEMENT>[m
+[31m-          </PATH>[m
+[31m-          <PATH>[m
+[31m-            <PATH_ELEMENT>[m
+[31m-              <option name="myItemId" value="myapp" />[m
+[31m-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />[m
+[31m-            </PATH_ELEMENT>[m
+[31m-            <PATH_ELEMENT>[m
+[31m-              <option name="myItemId" value="myapp" />[m
+[31m-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />[m
+[31m-            </PATH_ELEMENT>[m
+[31m-            <PATH_ELEMENT>[m
+[31m-              <option name="myItemId" value="public" />[m
+[31m-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />[m
+[31m-            </PATH_ELEMENT>[m
+[31m-            <PATH_ELEMENT>[m
+[31m-              <option name="myItemId" value="css" />[m
+[31m-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />[m
+[31m-            </PATH_ELEMENT>[m
+[31m-          </PATH>[m
+         </subPane>[m
+       </pane>[m
+       <pane id="Scratches" />[m
+[36m@@ -309,8 +246,8 @@[m
+     <servers />[m
+   </component>[m
+   <component name="ToolWindowManager">[m
+[31m-    <frame x="-8" y="-8" width="1378" height="754" extended-state="0" />[m
+[31m-    <editor active="false" />[m
+[32m+[m[32m    <frame x="-8" y="-8" width="1378" height="754" extended-state="1" />[m
+[32m+[m[32m    <editor active="true" />[m
+     <layout>[m
+       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />[m
+       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25373134" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />[m
+[36m@@ -319,7 +256,7 @@[m
+       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />[m
+       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />[m
+       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />[m
+[31m-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40353698" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />[m
+[32m+[m[32m      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40353698" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />[m
+       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />[m
+       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />[m
+       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />[m
+[36m@@ -390,13 +327,6 @@[m
+         </state>[m
+       </provider>[m
+     </entry>[m
+[31m-    <entry file="file://$PROJECT_DIR$/package.json">[m
+[31m-      <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state vertical-scroll-proportion="1.1428572">[m
+[31m-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />[m
+[31m-        </state>[m
+[31m-      </provider>[m
+[31m-    </entry>[m
+     <entry file="file://$PROJECT_DIR$/gulpfile.js">[m
+       <provider selected="true" editor-type-id="text-editor">[m
+         <state vertical-scroll-proportion="0.0">[m
+[36m@@ -455,5 +385,13 @@[m
+         </state>[m
+       </provider>[m
+     </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/package.json">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state vertical-scroll-proportion="0.7446808">[m
+[32m+[m[32m          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />[m
+[32m+[m[32m          <folding />[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+   </component>[m
+ </project>[m
+\ No newline at end of file[m
+[1mdiff --git a/package.json b/package.json[m
+[1mindex 606bac7..b6487f9 100644[m
+[1m--- a/package.json[m
+[1m+++ b/package.json[m
+[36m@@ -15,5 +15,6 @@[m
+     "serve-favicon": "~2.3.0",[m
+     "gulp": "^3.9.0",[m
+     "gulp-less": "^3.0.5"[m
+[31m-  }[m
+[31m-}[m
+\ No newline at end of file[m
+[32m+[m[32m  },[m
+[32m+[m[32m  "devDependencies": {}[m
+[32m+[m[32m}[m
+warning: LF will be replaced by CRLF in .idea/workspace.xml.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in package.json.
+The file will have its original line endings in your working directory.
