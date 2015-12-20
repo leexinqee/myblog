@@ -5,6 +5,7 @@
 	<title>my microblog</title>
 	<link rel="stylesheet" href="css/neat.css"/>
 	<link rel="stylesheet" href="font/style1/iconfont.css"/>
+	<link rel="stylesheet" href="css/animate.css"/>
 	<link rel="stylesheet" href="css/index.css"/>
 </head>
 <body>
@@ -13,7 +14,7 @@
 			<div class="head-box">
 				<div class="inner-wrap">
 					<div class="logo">
-						<img src="img/logo_03.png" alt="logo"/>
+						<a class="logo-index" href="#"><img src="img/logo_03.png" alt="logo"/></a>
 					</div>
 					<ul class="link-item-wrap">
 						<li class="link-item"><a href="#/">Explore</a></li>
@@ -36,10 +37,12 @@
 
 			<div class="banner">
 				<div class="inner-wrap">
-					<div class="left-content">
+					<div id="left-content" class="left-content fadeInRight">
 						<p class="fwc title-content">Mark Hodding, Sydeny trip</p>
 						<div class="text-decoration"></div>
-						<div class="player fwc"><i class="iconfont icon-iconfontbofang"></i></div>
+						<div class="player fwc">
+							<span id="player-audio"><i class="iconfont icon-iconfontzanting1"></i></span>
+						</div>
 					</div>
 					<div class="right-corner">
 
@@ -256,6 +259,51 @@
 			</div>
 		</div>
 
+		<div id="foot" class="footer">
+			<div class="footer-box clearfix">
+				<div class="left-footer">
+					<div class="friend-links-box">
+						<h4>友情链接</h4>
+						<ul class="url-links">
+							<li><a target="_blank" href="">一灰</a></li>
+							<li><a target="_blank" href="">一站网UED</a></li>
+							<li><a target="_blank" href="">阿牛博客</a></li>
+						</ul>
+					</div>
+					<div class="footer-hot-tags">
+						<h4>热门标签</h4>
+						<div class="tags-links">
+							<a href="">gulp</a>
+							<i>·</i>
+							<a href="">构建工具</a>
+							<i>·</i>
+							<a href="">css</a>
+							<i>·</i>
+							<a href="">javascript</a>
+							<i>·</i>
+							<a href="">linux</a>
+							<i>·</i>
+							<a href="">centos</a>
+							<i>·</i>
+							<a href="">jquery</a>
+							<i>·</i>
+							<a href="">html</a>
+							<i>·</i>
+							<a href="">sass</a> </div>
+					</div>
+					<div class="copy-right">
+						<span class="text">Copyright &copy; 2015 YDCSS. All rights reserved. powered by WordPress.</span>
+					</div>
+				</div>
+				<div class="right-footer">
+					<a href="#header"><i class="iconfont">&#xe609;</i></a>
+				</div>
+			</div>
+		</div>
 	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/index.js"></script>
+
 </body>
 </html>

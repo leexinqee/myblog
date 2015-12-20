@@ -56,12 +56,26 @@ ul {
   margin-top: -@height / 2;
 }
 
+// 渐变效果
 .transition(@time: 0.2s, @fn: ease-in-out) {
   -webkit-transition: all @fn @time;
   -moz-transition: all @fn @time;
   -ms-transition: all @fn @time;
   -o-transition: all @fn @time;
   transition: all @fn @time;
+}
+
+// boxshadow
+.box-shadow(@x: 0; @y: 0; @blur: 1px; @color: #000) {
+  -webkit-box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  box-shadow: @arguments;
+}
+.input-shadow(@x: 0; @y: 0; @blur: 1px; @color: #000) {
+  outline: none;
+  -moz-box-shadow: @arguments inset,@arguments;
+  -webkit-box-shadow: @arguments inset,@arguments;
+  box-shadow: @arguments inset,@arguments;
 }
 
 // arrow样式

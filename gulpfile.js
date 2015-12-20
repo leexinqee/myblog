@@ -1,10 +1,16 @@
 var gulp = require('gulp'),
 	less = require("gulp-less");
 
-gulp.task('testless', function() {
+gulp.task('index', function() {
 	return gulp.src("public/less/index.less")
 			.pipe(less())
 			.pipe(gulp.dest("public/css"))
+});
+
+gulp.task('animate', function() {
+	return gulp.src("public/less/animate.less")
+		.pipe(less())
+		.pipe(gulp.dest("public/css"))
 });
 
 gulp.task('testlesswatch', function () {
