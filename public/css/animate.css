@@ -9,9 +9,9 @@
   animation: playmovedown ease-out 1s;
 }
 .fadeInRight {
-  -webkit-animation: fadeInRight ease-out 0.5s;
-  -o-animation: fadeInRight ease-out 0.5s;
-  animation: fadeInRight ease-out 0.5s;
+  -webkit-animation: fadeInRight ease-out 0.5s 0.3s;
+  -o-animation: fadeInRight ease-out 0.5s 0.3s;
+  animation: fadeInRight ease-out 0.5s 0.3s;
 }
 @-webkit-keyframes playmoveup {
   0% {

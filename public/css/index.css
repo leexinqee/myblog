@@ -193,6 +193,7 @@ ul li {
   position: absolute;
   top: 50%;
   left: 0;
+  z-index: 10;
 }
 .banner .inner-wrap .left-content .title-content {
   font-size: 25px;
@@ -218,6 +219,13 @@ ul li {
 }
 .banner .inner-wrap .left-content .player i:hover {
   color: #cccccc;
+}
+.right-corner {
+  width: 1000px;
+  height: 390px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 #player-audio {
   display: inline-block;

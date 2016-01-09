@@ -7,7 +7,7 @@
         // 清空
         setTimeout(function(){
             $("#left-content").removeClass("fadeInRight")
-        }, 500);
+        }, 800);
 
         // 点击播放时的效果
         $("#player-audio").on("click", function(){

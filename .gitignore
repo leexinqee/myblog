@@ -1,0 +1,7 @@
+# 忽略上传node_modules文件夹内的内容
+
+/node_modules
+
+# 忽略文件 .idea 
+
+/.idea
