@@ -15,12 +15,14 @@
             var $pcontent = $(this).parents(".left-content");
             // ²¥·Å×´Ì¬
             if($icon.hasClass("icon-iconfontbofang1")){
+                Audio.stop();
                 $icon.removeClass("icon-iconfontbofang1").addClass("icon-iconfontzanting1");
                 $pcontent.addClass("playmovedown");
                 setTimeout(function(){
                     $pcontent.removeClass("playmovedown").css("top", "50%");
                 }, 1000)
             } else {
+                Audio.loadSound("music/if.mp3");
                 $icon.removeClass("icon-iconfontzanting1").addClass("icon-iconfontbofang1");
                 $pcontent.addClass("playmoveup");
                 setTimeout(function(){

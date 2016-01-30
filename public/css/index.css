@@ -49,6 +49,7 @@ ul li {
 /* 头部样式 */
 .head-box {
   width: 100%;
+  min-width: 1000px;
   height: 75px;
   position: absolute;
   top: 0;
@@ -177,9 +178,10 @@ ul li {
 }
 .banner {
   width: 100%;
+  min-width: 1000px;
   background: #fff url("../img/bg/bg-03.jpg") no-repeat center center;
   padding-top: 75px;
-  background-size: 100%;
+  background-size: 1430px;
 }
 .banner .inner-wrap {
   margin-left: auto;
@@ -222,7 +224,7 @@ ul li {
 }
 .right-corner {
   width: 1000px;
-  height: 390px;
+  height: 370px;
   position: absolute;
   left: 0;
   bottom: 0;

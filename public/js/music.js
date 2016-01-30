@@ -1,7 +1,7 @@
 /**
  * Created by lee on 2015/12/21.
  */
-(function(){
+(function(window){
 
 // 获取audioContext对象
     var ac = null;
@@ -19,7 +19,7 @@
     gainNode.connect(ac.destination);
 
     var analyser = ac.createAnalyser();
-    var size = 128;
+    var size = 84;
     analyser.fftsize = size * 2;
     analyser.connect(gainNode);
 
@@ -96,18 +96,46 @@
     ctx.fillStyle = line;
 
 // canvas画图
-    function draw(arr){
-        ctx.clearRect(0,0,width,height);
-        var w = width / size;
-        for(var i=0; i < size; i++){
-            var h = arr[i] / 256 * height;
-            ctx.fillRect(w * i, height - h, w * 0.6 , h);
+    var capArr = [];
+    initCap();
+    function initCap(){
+        for(var i = 0; i < size; i++){
+            capArr[i] = 0;
         }
     }
 
-    window.onload = function(){
-        loadsound("music/if.mp3");
-    };
+    function clearDraw(){
+        ctx.clearRect(0,0,width,height);
+    }
 
-})()
+    function draw(arr){
+        clearDraw();
+        var w = width / size;
+        var cw =  w * 0.7;
+        var capH = cw * 0.5;
+        var kong = 10;
+        for(var i=0; i < size; i++){
+            var h = arr[i] / 256 * height;
+            capArr[i] = (h >= capArr[i]) ? h : (--capArr[i]);
+            if(capArr[i] + kong > height){
+                capArr[i] = height - kong;
+                h = h - kong;
+            }
+            ctx.fillRect(w * i, height - h, cw , h);
+            ctx.fillRect(w * i, height - capArr[i] - kong, cw , capH);
+        }
+    }
+
+    function stop(){
+        if(source){
+            source[source.stop ? "stop" : "nodeOff"]();
+        }
+    }
+
+    window.Audio = {
+        loadSound : loadsound,
+        stop : stop
+    }
+
+}(window));
 
